@@ -35,3 +35,6 @@
 5. Espera unos cuantos minutos. Y una vez iniciado, ve a la siguiente direccion:
     http://localhost:8085/
 
+6. Logeate con las credenciales, en el airflow webser.
+
+7. Activa el DAG y ejecutalo
