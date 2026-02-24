@@ -9,11 +9,10 @@
 
 ## INICIALIZACIÓN
 1. Clona el repositorio:
-```git
     `git clone https://github.com/DeynnerASR/-Project-Medallion_architecture_pipeline-vuelos.git`
 
 2. Crea el archivo .env similar a las siguientes credenciales:
-    `
+    ```.env
         POSTGRES_USER=usuario
         POSTGRES_PASSWORD=contraseña
         POSTGRES_DB=base_datos
@@ -24,7 +23,7 @@
         AIRFLOW_ADMIN_EMAIL=correo@example.com
         AIRFLOW_ADMIN_PASSWORD=contraseña
         AIRFLOW_UID=50000
-    `
+    ```
 
 3. Antes de iniciar, procura limpiar volumenes existentes:
     `docker compose down -v`
