@@ -23,6 +23,16 @@
         AIRFLOW_ADMIN_EMAIL=correo@example.com
         AIRFLOW_ADMIN_PASSWORD=contraseña
         AIRFLOW_UID=50000
+
+        SNOWFLAKE_CONNECTION_ID=nombre
+        CONNECTION_TYPE=Snowflake
+        SCHEMA=nombre_schema
+        SNOWFLAKE_USER=nombre_usuario_snowflake
+        SNOWFLAKE_PASSWORD=contraseña_usuario_snowflake
+        ACCOUNT=codigo_snowflake_contiene_region
+        WAREHOUSE=COMPUTE_WH
+        SNOWFLAKE_DATABASE=nombre_db_snowflake
+        ROLE=ACCOUNTADMIN
     ```
 
 3. Antes de iniciar, procura limpiar volumenes existentes:
