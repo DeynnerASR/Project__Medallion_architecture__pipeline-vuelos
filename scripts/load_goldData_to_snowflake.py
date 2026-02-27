@@ -27,7 +27,7 @@ def cargar_gold_layer_snowflake(**context):
         account=conn.extra_dejson["account"],
         warehouse=conn.extra_dejson.get("warehouse"),
         database = conn.extra_dejson.get("database"),
-        schema = conn.extra_dejson.get("schema"),
+        schema=conn.schema,
         role=conn.extra_dejson.get("role")
     )
 
@@ -37,7 +37,7 @@ def cargar_gold_layer_snowflake(**context):
     ## FLIGHT_KPIS tabla destino
 
     merge_sql = """
-        MERGE INTO FLIGHT_KPI tgt
+        MERGE INTO FLIGHT_KPIS tgt
         USING (
                 SELECT 
                     TO_TIMESTAMP(%s) AS WINDOW_START,
@@ -58,7 +58,7 @@ def cargar_gold_layer_snowflake(**context):
             INSERT (CANTIDAD_DE_VUELOS, EN_TIERRA,LOAD_TIME,PAIS, VELOCIDAD_PROMEDIO,WINDOW_START)
             VALUES (src.CANTIDAD_DE_VUELOS,src.EN_TIERRA,CURRENT_TIMESTAMP(),src.PAIS,src.VELOCIDAD_PROMEDIO,src.WINDOW_START)
     """
-
+ 
     ## ejecuto las queries anteriormente instanciadas, usando el dataframe de la capa agregada gold
     with sf_conn.cursor() as cursor:
         for _, row in df.iterrows():
