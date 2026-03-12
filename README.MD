@@ -3,8 +3,9 @@
 
 ## DIAGRAMA
 <div align="center">
-  
+![data_architecture_diagram](/documentation/Proyecto%20Vuelos.drawio.png)  
 </div>
+
 ## TECNOLOGIAS
 
 
