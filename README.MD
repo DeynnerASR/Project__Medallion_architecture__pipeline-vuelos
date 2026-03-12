@@ -1,6 +1,6 @@
 # TUBERIA ETL con MEDALLION ARCHITECTURE
 El siguiente proyecto realiza una implementación Batch ETL basíca, usando la api open source de OpenSky Network. Esta nos permite ver el trafico aereo de varios paises en tiempo real.
-Su proceso consiste en realizar solicitudes a la API dentro de un tiempo definido (orchestada con AIRFLOW), guardar esta información por capas (medallion architecture); extraer los datos que necesitamos, limpiarlos, y transformarlos para que se puedan cargar dentro de un Data Warehouse (en este caso Snowflake). Finalmente se utiliza una herramienta BI open source llamada Looker Studio con el objetivo de mostrar los resultados dependiendo de nuestras necesidades
+Su proceso consiste en realizar solicitudes a la API dentro de un tiempo definido (orchestada con AIRFLOW), guardar esta información por capas (medallion architecture); extraer los datos que necesitamos, limpiarlos, y transformarlos para que se puedan cargar dentro de un Data Warehouse (en este caso Snowflake). Finalmente se utiliza una herramienta BI open source llamada Looker Studio con el objetivo de mostrar los resultados dependiendo de nuestras necesidades.
 
 
 ## DIAGRAMA
