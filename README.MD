@@ -3,7 +3,7 @@
 
 ## DIAGRAMA
 <div align="center">
-  <iframe frameborder="0" style="width:100%;height:413px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G173RYgc4MncrBwetzN8RyWdCtaZGi7kPQ"></iframe>
+  
 </div>
 ## TECNOLOGIAS
 
